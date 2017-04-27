@@ -9,7 +9,7 @@ Log.i(“HELLO”, “Hello World”);
 <p align="center">
 <img 
 src="https://raw.githubusercontent.com/rodrimmbdev/seu_tema2/master/imgs/exercise_1.png"
-alt="Imagen ejercicio 3"
+alt="Imagen ejercicio 1"
 height="200"
 />
 </p>
