@@ -30,3 +30,6 @@ Siguiendo con el concepto del ejercicio anterior de lanzar una activity para obt
 Una vez tengamos los datos de el contacto los imprimiremos en la consola logcat.
 
 <b>NOTA:</b> Debemos tener contactos en la agenda del movil.
+
+## Service
+Antes de empezar ha hacer estos ejercicios hay que haber visto el <a href="https://docs.google.com/presentation/d/1hh3VbOnFx8NcYuah30U32LnCMCho4X4inkUPNziGEq0/edit?usp=sharing">tema 3</a> de interfaces de usuario (<a href="https://github.com/rodrimmbdev/seu_tema3">Ejercicios</a>).
