@@ -33,3 +33,15 @@ Una vez tengamos los datos de el contacto los imprimiremos en la consola logcat.
 
 ## Service
 Antes de empezar ha hacer estos ejercicios hay que haber visto el <a href="https://docs.google.com/presentation/d/1hh3VbOnFx8NcYuah30U32LnCMCho4X4inkUPNziGEq0/edit?usp=sharing">tema 3</a> de interfaces de usuario (<a href="https://github.com/rodrimmbdev/seu_tema3">Ejercicios</a>).
+### Ejercicio 3
+Vamos a crear una app con una UI que tenga dos botones: “Iniciar servicio” y “Parar servicio”. 
+
+Cada vez que pulsemos el botón “Iniciar servicio”, llamaremos a un ```ServiceIntent``` que pondrá en cola cada petición. Cada peticion al servicio mostrará un ```Toast``` con el número del hilo que se ha lanzado cada 4 segundos y a los 6 segundos se debe finalizar la petición.
+
+El primer hilo mostrará un texto así: “Petición 1”, el segundo “Petición 2”, etc…
+
+Pulsa el botón “Iniciar servicio” varias veces para que veas que los Toast no se solapan al mostrarse por pantalla y cada 6 segundos se muestra un ```Toast```.
+
+“Parar servicio” llamara a la función ```stopService()```.
+
+<b>NOTA:</b> Cerrar la app sin pulsar “Parar servicio” y ver que el Service sigue funcionando.
