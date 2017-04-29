@@ -23,3 +23,10 @@ Debes imprimir por el logcat varios mensajes:
 * Debes imprimir en ```onActivityResult()``` la fecha que nos a pasado ```SecondActivity```.
 
 <b>NOTA:</b> Para obtener la fecha usa los paquetes: ```java.util.Calendar``` y ```java.text.SimpleDateFormat```
+
+### Contactos
+Siguiendo con el concepto del ejercicio anterior de lanzar una activity para obtener un resultado vamos a, en vez de obtener un resultado de activity creada por nosotros, lanzar un intent implicito para solicitar a una activity del sistema que nos devuelva datos de un contacto. 
+
+Una vez tengamos los datos de el contacto los imprimiremos en la consola logcat.
+
+<b>NOTA:</b> Debemos tener contactos en la agenda del movil.
