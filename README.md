@@ -15,13 +15,11 @@ height="200"
 </p>
 
 ### Ejercicio 2
-Crea dos activities (como en el ejercicio 1), sin interfaz de usuario. La primera activity (```FirstActivity```) debe llamar a la segunda (```SecondActivity```) y esta debe devolver un resultado con la fecha actual.
+Crea dos activities (como en el ejercicio 1, crea las activities manuealmente), sin interfaz de usuario. La primera activity (```FirstActivity```) debe llamar a la segunda (```SecondActivity```) esperando de esta un resultado. ```SecondActivity``` debe devolver un resultado con la fecha actual.
 Debes imprimir por el logcat varios mensajes:
-* Cuando se lance FirstActivity.
-* Cuando se lance SecondActivity.
-* Cuando entremos en la función onActivityResult().
-* Debes imprimir en onActivityResult() la fecha que nos a pasado SecondActivity.
-
-
+* Cuando se lance ```FirstActivity```.
+* Cuando se lance ```SecondActivity```.
+* Cuando entremos en la función ```onActivityResult()```.
+* Debes imprimir en ```onActivityResult()``` la fecha que nos a pasado ```SecondActivity```.
 
 <b>NOTA:</b> Para obtener la fecha usa los paquetes: ```java.util.Calendar``` y ```java.text.SimpleDateFormat```
