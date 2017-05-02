@@ -3,4 +3,5 @@
     <string name="btn_launch_service">Iniciar Servicio</string>
     <string name="btn_stop_service">Parar Servicio</string>
     <string name="toast_petition">Peticion numero:</string>
+    <string name="toast_petition_service">Hilo:</string>
 </resources>
