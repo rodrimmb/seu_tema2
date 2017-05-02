@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name="es.ubu.seu.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,9 +17,12 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="es.ubu.seu.services.MyIntentService"
-            android:exported="false"></service>
+        <service android:name="es.ubu.seu.services.MyIntentService" android:exported="false">
+        </service>
+
+        <service android:name="es.ubu.seu.services.MyService" android:exported="false">
+        </service>
+
     </application>
 
 </manifest>

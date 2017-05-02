@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import es.ubu.seu.services.MyIntentService;
+import es.ubu.seu.services.MyService;
 import es.ubu.seu.seut2.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void makeServicePetition() {
         numberOfPetition++;
-        Intent intentService = new Intent(getApplicationContext(), MyIntentService.class);
+        Intent intentService = new Intent(getApplicationContext(), MyService.class);
         intentService.putExtra(PETITION, numberOfPetition);
         startService(intentService);
     }
 
     private void stopMyService(){
         numberOfPetition = 0;
-        Intent intentService = new Intent(getApplicationContext(), MyIntentService.class);
+        Intent intentService = new Intent(getApplicationContext(), MyService.class);
         stopService(intentService);
         Log.i(LOG_ACTIVITY, "Servicio detenido");
     }

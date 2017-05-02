@@ -46,3 +46,16 @@ Pulsa el botón “Iniciar servicio” varias veces para que veas que los Toast 
 
 
 <b>NOTA:</b> Cerrar la app sin pulsar “Parar servicio” y ver que el Service sigue funcionando.
+### Ejercicio 4
+Vamos a crear una app con una UI que tenga dos botones: “Iniciar servicio” y “Parar servicio”.
+ 
+Cada vez que pulsemos el botón “Iniciar servicio” llamaremos a un ```Service``` que creara un hilo por cada petición (hasta un máximo de dos hilos) en el que se muestre un ```Toast``` con el número del hilo que se ha lanzado y espere 4 segundos.
+ 
+Ejemplo de los mensajes a mostrar: “Hilo 1”, “Hilo 2”, etc…
+
+Pulsa el botón “Iniciar servicio” varias veces para que veas que los Toast se solapan y muestra logs por la consola logcat para que veas que solo se ejecutan las tareas de dos en dos.
+
+“Parar servicio” llamara a la función stopService().
+
+
+<b>NOTA:</b> Usa la clase de la API de java: ```ExecutorService``` y ```Executors.newFixedThreadPool(int threads)``` para la gestión de los hilos. 
