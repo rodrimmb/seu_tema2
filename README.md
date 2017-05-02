@@ -33,3 +33,29 @@ Una vez tengamos los datos de el contacto los imprimiremos en la consola logcat.
 
 ## Service
 Antes de empezar ha hacer estos ejercicios hay que haber visto el <a href="https://docs.google.com/presentation/d/1hh3VbOnFx8NcYuah30U32LnCMCho4X4inkUPNziGEq0/edit?usp=sharing">tema 3</a> de interfaces de usuario (<a href="https://github.com/rodrimmbdev/seu_tema3">Ejercicios</a>).
+### Ejercicio 3
+Vamos a crear una app con una UI que tenga dos botones: “Iniciar servicio” y “Parar servicio”.
+ 
+Cada vez que pulsemos el botón “Iniciar servicio”, llamaremos a un ```ServiceIntent``` que pondrá en cola cada petición. Cada petición al servicio mostrará un ```Toast``` con el número de la petición que se ha lanzado y a los 4 segundos finalizar la petición.
+
+El primer hilo mostrará un texto así: “Petición 1”, el segundo “Petición 2”, etc…
+
+Pulsa el botón “Iniciar servicio” varias veces para que veas que los Toast no se solapan al mostrarse por pantalla y cada 4 segundos se muestra un Toast con el número de la petición 
+
+“Parar servicio” llamara a la función ```stopService()```.
+
+
+<b>NOTA:</b> Cerrar la app sin pulsar “Parar servicio” y ver que el Service sigue funcionando.
+### Ejercicio 4
+Vamos a crear una app con una UI que tenga dos botones: “Iniciar servicio” y “Parar servicio”.
+ 
+Cada vez que pulsemos el botón “Iniciar servicio” llamaremos a un ```Service``` que creara un hilo por cada petición (hasta un máximo de dos hilos) en el que se muestre un ```Toast``` con el número del hilo que se ha lanzado y espere 4 segundos.
+ 
+Ejemplo de los mensajes a mostrar: “Hilo 1”, “Hilo 2”, etc…
+
+Pulsa el botón “Iniciar servicio” varias veces para que veas que los Toast se solapan y muestra logs por la consola logcat para que veas que solo se ejecutan las tareas de dos en dos.
+
+“Parar servicio” llamara a la función stopService().
+
+
+<b>NOTA:</b> Usa la clase de la API de java: ```ExecutorService``` y ```Executors.newFixedThreadPool(int threads)``` para la gestión de los hilos. 
